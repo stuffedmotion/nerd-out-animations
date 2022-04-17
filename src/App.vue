@@ -3,6 +3,7 @@ import SectionLottieGeneral from "@sections/SectionLottieGeneral.vue";
 import SectionLottieApi from "@sections/SectionLottieApi.vue";
 import SectionSpriteLoop from "./sections/SectionSpriteLoop.vue";
 import SectionSpriteInteractive from "./sections/SectionSpriteInteractive.vue";
+import SectionSvg from "./sections/SectionSvg.vue";
 
 export default {
   components: {
@@ -10,6 +11,7 @@ export default {
     SectionLottieApi,
     SectionSpriteLoop,
     SectionSpriteInteractive,
+    SectionSvg,
   },
 };
 </script>
@@ -19,6 +21,7 @@ export default {
   <SectionLottieApi />
   <SectionSpriteLoop />
   <SectionSpriteInteractive />
+  <SectionSvg />
 </template>
 
 <style lang="scss">
