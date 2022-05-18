@@ -1,36 +1,29 @@
 <script>
 import { defineComponent } from "vue";
 
-import { initSprites } from "@utils/sprite";
 import Section from "../components/Section.vue";
 
 export default defineComponent({
   components: {
     Section,
   },
-  data() {
-    return {};
-  },
-  computed: {},
-  watch: {},
   mounted() {
-    const clickSprite = document.querySelector("[data-click-sprite]");
-    if (!clickSprite) return;
+    const example = document.querySelector("[data-example-sprite]");
+    if (!example) return;
 
-    clickSprite.addEventListener("mouseenter", () => {
-      clickSprite.sprite.playOnce({
+    example.addEventListener("mouseenter", () => {
+      example.sprite.playOnce({
         frameStart: 1,
         frameEnd: 6,
       });
     });
 
-    clickSprite.addEventListener("click", () => {
-      clickSprite.sprite.playOnce({
+    example.addEventListener("click", () => {
+      example.sprite.playOnce({
         frameStart: 7,
       });
     });
   },
-  methods: {},
 });
 </script>
 
@@ -40,7 +33,7 @@ export default defineComponent({
       <div
         class="sprite test-sprite click-sprite"
         data-sprite="logo-hover"
-        data-click-sprite
+        data-example-sprite
         data-frame-rate="24"
         data-auto-play="0"
         style="visibility: visible"

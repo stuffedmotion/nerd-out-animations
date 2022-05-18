@@ -19,7 +19,6 @@ export default defineComponent({
 
 <template>
   <Section title="SVG Animation">
-    <div class="card">
       <div class="home-intro__elem home-intro__stem-primary">
         <div class="home-intro__character-k">
           <svg
@@ -297,7 +296,6 @@ export default defineComponent({
           </svg>
         </div>
       </div>
-    </div>
   </Section>
 </template>
 
